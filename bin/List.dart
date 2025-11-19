@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main() {
   List a = [1, 20, 20]; //any type
   List<int> numbers = [1, 2, 3, 65, 888, 999]; //int type
