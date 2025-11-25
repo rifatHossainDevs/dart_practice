@@ -36,16 +36,31 @@ void main() {
   }
 
   List<int> ages = List<int>.filled(3, 1);
-  ///"3" is the limit of length.we can add 3 element to this list.but if not fill any position then it fill with "1"
-  print(ages); ///[1, 1, 1]...this print the ages list but with all 1 element.cause there is not element inserted in the ages list
+
+  ///"3" is the limit of length.we can add 3 element to this list.but if not fill any position then it fill with "1" automatically
+  print(ages);
+
+  ///[1, 1, 1]...this print the ages list but with all 1 element.cause there is not element inserted in the ages list
   ages[0] = 2;
   ages[1] = 5;
-  print(ages); ///[2, 5, 1],,,here last 1 is default value
+  print(ages);
+
+  ///[2, 5, 1],,,here last 1 is default value
 
   ///Growable list
   List animals = [];
   animals.add("Tiger");
   animals.addAll(["Fish", "Hen", "Cow"]);
   animals.add(1);
-  print(animals); ///[Tiger, Fish, Hen, Cow, 1]
+  print(animals);
+
+  ///[Tiger, Fish, Hen, Cow, 1]
+
+  ///List in List like matrix
+  List<List<int>> matrix = [
+    [1, 2, 3],
+    [11, 12, 13],
+  ];
+
+  print(matrix[0][1]);
 }
