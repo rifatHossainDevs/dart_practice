@@ -1,4 +1,4 @@
-void main(){
+void main() {
   String name = "10";
   int value = int.parse(name);
   print(value.runtimeType); //int
@@ -12,14 +12,13 @@ void main(){
   String stringValue = value.toString();
   print(stringValue.runtimeType); //string
 
-
-  double balance= 100;
+  double balance = 100;
 
   String stringBalance = balance.toString();
   int intBalance = balance.toInt();
   bool isFun = true;
 
   print(isFun.runtimeType);
-
-
 }
+
+
