@@ -1,18 +1,28 @@
-class Student{
-  String? name;
-  String? studentId;
-  double? gpa;
+class Car{
+  String? model;
+  String? brand;
+  int? manufecturingYear;
+  String? color;
 
-  Student(this.name, this.studentId, this.gpa);
+  Car(this.model, this.brand, this.manufecturingYear): color = null;
 
-  void printStudentInfo(){
-    print("Name= $name");
-    print("Student Id= $studentId");
-    print("GPA= $gpa");
+
+
+  Car.fresh(this.model, this.manufecturingYear, this.color): brand = "bangla";
+
+  void printInfo(){
+    print("Model: $model, Brand: $brand, Year: $manufecturingYear, color = $color");
   }
+}
 
-  Student.freshman(String name, String studentId): this(name, studentId, 0.00);
+void main(){
+  Car c = Car("F1", "marceties", 2025);
+  /*c.model = "C1";
+  c.brand = "Toyota";
+  c.manufecturingYear = 1955;*/
+  Car f = Car.fresh("Bangla", 2022, "black");
 
-
-
+  c.printInfo();
+  f.printInfo();
+  print(f.color);
 }
