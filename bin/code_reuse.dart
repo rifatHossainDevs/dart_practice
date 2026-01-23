@@ -1,5 +1,7 @@
-mixin A{
-  void test();
+mixin class A{
+  void test(){
+
+  }
 }
 mixin B{
   void bTest();
@@ -9,11 +11,11 @@ mixin C{
 
   }
 }
-class Test with A, B, C{
-  @override
-  void test() {
 
-  }
+class D{
+
+}
+class Test extends D with A, B, C{ 
 
   @override
   void bTest() {
